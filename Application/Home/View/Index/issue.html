@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content=" initial-scale=1.0, minimum-scale = 1, maximum-scale = 1" />
+    <title>诚享公告</title>
+
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/yhbd.css" />
+
+</head>
+
+
+<body>
+<div class="sy_page gglb_bg">
+
+
+
+    <div class="w_zhong">
+
+        <div class="gglb">
+
+
+            <div class="gglb_top">
+                <div class="gglb_top1">
+                    <div class="ztx"><img src="{$userInfo.headimgurl}" /></div>
+                    <div class="id">{$userInfo.sr_realname}</div>
+                </div>
+                <div class="gglb_top2">
+                    <div class="dsh"><a class="crb" href="{:U('Index/articleList' , array('openid' => $openid))}">待审核<if condition="$num neq 0"><div class="tsl">{$num}</div></if></a></div>
+                    <div class="dsh"><a href="{:U('Index/checked')}">已审核</a></div>
+                    <div class="dsh"><a href="{:U('Index/issue')}"><div class="bsx"></div>已发布</a></div>
+                </div>
+            </div>
+
+
+
+            <div class="gglb_1">
+                <foreach name="list" item="v" key="k">
+                    <div class="gglb_2">
+                        <a href="{:U('Index/article' , array('news_id' => $v['news_id']))}">
+                            <div class="gglb_3">
+                                <h1>{$v.news_title}</h1>
+                                <p style="height: 20px;">{$v.content}……</p><p style="height: 20px;">{$v.add_time}</p>
+                            </div>
+                        </a>
+                    </div>
+                </foreach>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

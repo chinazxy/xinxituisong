@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content=" initial-scale=1.0, minimum-scale = 1, maximum-scale = 1" />
+    <title>诚享公告</title>
+
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/yhbd.css" />
+    <link href="__PUBLIC__/assets/css/sweetalert/sweetalert.css" rel="stylesheet">
+    <script src="__PUBLIC__/assets/js/jquery-2.0.3.min.js" ></script>
+    <script src="__PUBLIC__/assets/js/sweetalert/sweetalert.min.js"></script>
+</head>
+
+
+<body>
+<div class="sy_page">
+
+
+    <div class="w_zhong">
+
+        <include file="Public:header" />
+        <div class="yhbd_1">
+
+            <div class="yhbd_4">用户绑定</div>
+
+            <div class="yhbd_5">
+                <input style="width: 100%;line-height: 42px" type="phone" placeholder="请输入11位手机号" name="mobile" maxlength="11" />
+            </div>
+
+            <div class="yhbd_5">
+                <input style="width: 100%;line-height: 42px" type="text" placeholder="请输入您的真实姓名" name="username"/>
+            </div>
+
+            <div class="yhbd_5">
+                <input style="width: 100%;line-height: 42px" type="text" placeholder="请输入18位身份证号" name="idcard"  maxlength="18" />
+            </div>
+
+            <div class="yhbd_6">
+                <div class="yhbd_7" onclick="show()">
+                    <div class="yhbd_7_1">请选择店铺等级</div>
+                    <div class="yhbd_7_2"><img src="__PUBLIC__/img/yhbd_3.png"/></div>
+                </div>
+                <input type="hidden" name="openid" value="{$openid}">
+                <input type="hidden" name="id" value="{$id}">
+                <!--添加dib显示下拉内容-->
+                <div class="yhbd_8">
+                    <volist name="seller_lev" id="vo" mod="2" key="k" >
+                        <eq name="mod" value="1"><button class="yhbd_8_2" onclick="add({$k}-1)">{$vo}店铺</button></eq>
+                        <eq name="mod" value="0"><button class="yhbd_8_1" onclick="add({$k}-1)">{$vo}店铺</button></eq>
+                    </volist>
+                </div>
+            </div>
+        <div class="lev"></div>
+        </div>
+        <div class="yhbd_9" onclick="submit()" >提 交 绑 定</div>
+
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    function show(){
+        if ($(".yhbd_8").css('display') == 'none'){
+            $(".yhbd_8").css('display' , 'block')
+        }else{
+            $(".yhbd_8").css('display' , 'none')
+        }
+    }
+
+    function add(id){
+        if (id == 0){
+            $('.yhbd_8').css('display' , 'none');
+            $('.yhbd_7_1').html("{:$seller_lev[0]}店铺");
+            $('.lev').html("<input type='hidden' name='lev' value='"+id+"' />");
+        }else if (id == 1){
+            $('.yhbd_8').css('display' , 'none');
+            $('.yhbd_7_1').html("{:$seller_lev[1]}店铺");
+            $('.lev').html("<input type='hidden' name='lev' value='"+id+"' />");
+        }else if (id == 2){
+            $('.yhbd_8').css('display' , 'none');
+            $('.yhbd_7_1').html("{:$seller_lev[2]}店铺");
+            $('.lev').html("<input type='hidden' name='lev' value='"+id+"' />");
+        }else if (id == 3){
+            $('.yhbd_8').css('display' , 'none');
+            $('.yhbd_7_1').html("{:$seller_lev[3]}店铺");
+            $('.lev').html("<input type='hidden' name='lev' value='"+id+"' />");
+        }
+    }
+
+    function submit(){
+        var realname = $('input[name="username"]').val();
+        var mobile = $('input[name="mobile"]').val();
+        var idcard = $('input[name="idcard"]').val();
+        var openid = $('input[name="openid"]').val();
+        var id = $('input[name="id"]').val();
+        var lev = $('input[name="lev"]').val();
+
+        if( realname == '' || mobile =='' || idcard == '' || lev == ''){
+            swal({title:"提示",text:"请填写完整信息",type:"error"}) //alert('用户名或密码不能为空');
+            return;
+        }
+        var re = /^1\d{10}$/;
+        if (!re.test(mobile)){
+            swal({title:"提示",text:"请填写正确的电话号码",type:"error"}) //alert('用户名或密码不能为空');
+            return;
+        }
+        var r = /(^\d{15}$)|(^\d{17}(\d|X)$)/;
+        if (!r.test(idcard)){
+            swal({title:"提示",text:"请填写正确的身份证号码",type:"error"}) //alert('用户名或密码不能为空');
+            return;
+        }
+        $.ajax({
+            url:'{:U("Home/Index/bindInfo")}',
+            type:'post',
+            dataType:'json',
+            data:{realname:realname,mobile:mobile , idcard : idcard , openid : openid , id : id , lev : lev},
+            success:function(res){
+                if(res.res==1){
+                    window.location.href = res.url;
+                }else{
+                    swal({title:"提示",text:res.msg,type:"error"})
+                }
+            },
+            error : function(XMLHttpRequest, textStatus, errorThrown) {
+                swal({title:"提示",text:"网络失败，请刷新页面后重试",type:"error"})
+            }
+        })
+    }
+</script>

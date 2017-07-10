@@ -1,0 +1,46 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content=" initial-scale=1.0, minimum-scale = 1, maximum-scale = 1" />
+    <title>韩菲诗-绑定成功</title>
+
+
+    <link type="text/css" rel="stylesheet" href="/Public/css/yhbd.css" />
+
+
+</head>
+
+
+<body>
+<div class="sy_page">
+
+
+
+    <div class="w_zhong">
+
+        <div class="yhbd">
+            <div class="yhbd_1">
+                <div class="yhbd_2"><img src="/Public/img/yhbd_1.png"/></div>
+                <div class="yhbd_3"><img src="/Public/img/yhbd_2.png"/></div>
+            </div>
+        </div>
+
+        <div class="bdcg_1"><img src="/Public/img/bdcg_1.png"/></div>
+        <div class="bdcg_2">恭喜您，绑定成功!</div>
+
+
+
+
+
+
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content=" initial-scale=1.0, minimum-scale = 1, maximum-scale = 1" />
+    <title>公告详情</title>
+    <link href="__PUBLIC__/assets/css/sweetalert/sweetalert.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/yhbd.css" />
+    <script src="__PUBLIC__/assets/js/jquery-2.0.3.min.js" ></script>
+    <script src="__PUBLIC__/assets/js/sweetalert/sweetalert.min.js"></script>
+
+</head>
+
+
+<body>
+<div class="sy_page">
+
+
+
+    <div class="w_zhong">
+
+        <div class="ggxq" style="margin-bottom: 10px;">
+            <div class="ggxq_1">
+                <h1>{$info.news_title}</h1>
+                <h2>{$info.add_time}</h2>
+            </div>
+        </div>
+            <div style="margin: 0 8px">
+            {$article}
+            </div>
+
+
+
+
+
+
+
+    </div>
+    <if condition="$is_boss eq 1">
+        <div class="ggxq_3">
+            <button class="z1" onclick="pass({$info.news_id})">审核通过</button>
+            <button class="y1" onclick="refuse({$info.news_id})">审核不通过</button>
+        </div>
+
+    </if>
+
+</div>
+
+
+<script>
+    var xmlHttpRequest;
+
+    $(function(){
+
+        if(window.XMLHttpRequest){
+
+            xmlHttpRequest=new XMLHttpRequest();
+
+        }else{
+
+            xmlHttpRequest=new ActiveXObject("Microsoft.XMLHTTP");
+
+        }
+
+        xmlHttpRequest.open("GET","AjaxServlet",true);
+
+    });
+    function url(url){
+        window.location.href = "{:U('News/detail')}?id="+url;
+    }
+    function refuse(id){
+        if (confirm('是否拒绝此文章？')){
+            var url = '{:U("Index/index1")}';
+            $.ajax({
+                url : "{:U('Index/delNews')}",
+                type : "POST",
+                dataType : "JSON",
+                data : {id : id },
+                success : function (e) {
+                    if (e.res == 1){
+                        $('.ggxq_3').html('<a style="width: 100%" class="y1" href="'+url+'">返回</a>');
+                        swal({title:"提示",text:e.msg,type:"success"})
+                    }else{
+                        swal({title:"提示",text:e.msg,type:"error"})
+                    }
+                },
+                error : function (e) {
+                    alert(e)
+                    swal({title:"提示",text:"修改失败，网络错误，请重试",type:"error"})
+                }
+            })
+        }
+    }
+    function pass(id){
+
+        if (confirm('是否通过审核？')){
+            var url = '{:U("Index/index1")}';
+            $.ajax({
+                url : "{:U('Index/passNews')}",
+                type : "POST",
+                dataType : "JSON",
+                data : {id : id },
+                success : function (e) {
+                    if (e.res == 1){
+                        $('.ggxq_3').html('<a style="width: 100%" class="y1" href="'+url+'">返回</a>');
+                        swal({title:"提示",text:e.msg,type:"success"})
+                    }else{
+                        swal({title:"提示",text:e.msg,type:"error"})
+                    }
+                },
+                error : function (e) {
+                    swal({title:"提示",text:"审核失败，网络错误，请重试",type:"error"})
+                }
+            })
+        }
+    }
+</script>
+
+</body>
+</html>

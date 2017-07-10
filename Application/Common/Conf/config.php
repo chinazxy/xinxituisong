@@ -18,4 +18,18 @@ return array(
     'DB_RW_SEPARATE'        =>  false,       // 数据库读写是否分离 主从式有效
     'DB_MASTER_NUM'         =>  1, // 读写分离后 主服务器数量
     'DB_SLAVE_NO'           =>  '', // 指定从服务器序号
+
+    'seller_lev' => [
+        0 => '心级',
+        1 => '钻级',
+        2 => '金冠',
+        3 => '皇冠',
+        4 => 'A类',
+        5 => '老板'
+    ],
+
+    'AppID' => 'wx3ca473216ca4e62d',
+    'Token' => 'hafeisi',
+    'EncodingAESKey' => 'I5wDv3JNKpie8pthJ7ppjBiwa8qFCnmnr0x5mHNlmG0',
+    'appsecret' => '37e30b342be4c448ce30504081fdef21'
 );

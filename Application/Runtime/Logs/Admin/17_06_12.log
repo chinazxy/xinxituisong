@@ -1,0 +1,381 @@
+[ 2017-06-12T19:30:01+08:00 ] 127.0.0.1 /index.php/Admin/Index/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+ERR: 非法操作:js
+
+[ 2017-06-12T19:30:01+08:00 ] 127.0.0.1 /index.php/Admin/Index/js/plugins/easypiechart/jquery.easypiechart.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+ERR: 非法操作:js
+
+[ 2017-06-12T19:30:01+08:00 ] 127.0.0.1 /index.php/Admin/Index/js/plugins/sparkline/jquery.sparkline.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+ERR: 非法操作:js
+
+[ 2017-06-12T19:30:01+08:00 ] 127.0.0.1 /index.php/Admin/Index/js/demo/sparkline-demo.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+ERR: 非法操作:js
+
+[ 2017-06-12T19:33:50+08:00 ] 127.0.0.1 /index.php/Admin/Index/addMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `admin_menu` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin_menu` WHERE ( m_parent_id = 0 and m_dis = 1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `admin_menu` WHERE ( m_parent_id = 1 and m_dis = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-06-12T19:33:57+08:00 ] 127.0.0.1 /index.php/Admin/Index/doAddMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `admin_menu` [ RunTime:0.0038s ]
+SQL: INSERT INTO `admin_menu` (`m_name`,`m_controller`,`m_action`,`m_parent_id`,`m_dis`) VALUES ('的萨达','dsa','dsad','0','1') [ RunTime:0.0632s ]
+
+[ 2017-06-12T19:34:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `admin_menu` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `admin_menu` WHERE ( m_parent_id = 0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_menu` WHERE ( m_parent_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_menu` WHERE ( m_parent_id = 9 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant vo - assumed 'vo' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\5f62cf3ecb66a47dcb1a9b7512abfb3d.php 第 74 行.
+NOTIC: [8] Use of undefined constant kid_list - assumed 'kid_list' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\5f62cf3ecb66a47dcb1a9b7512abfb3d.php 第 74 行.
+NOTIC: [8] Use of undefined constant vo - assumed 'vo' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\5f62cf3ecb66a47dcb1a9b7512abfb3d.php 第 74 行.
+NOTIC: [8] Use of undefined constant kid_list - assumed 'kid_list' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\5f62cf3ecb66a47dcb1a9b7512abfb3d.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2017-06-12T19:34:03+08:00 ] 127.0.0.1 /index.php/Admin/Index/delMenu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `admin_menu` [ RunTime:0.0036s ]
+SQL: DELETE FROM `admin_menu` WHERE ( m_id = 9 ) [ RunTime:0.0698s ]
+
+[ 2017-06-12T19:37:57+08:00 ] 127.0.0.1 /index.php/Admin/Index/index_v3.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+ERR: 非法操作:index_v3
+
+[ 2017-06-12T19:38:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-06-12T19:38:01+08:00 ] 127.0.0.1 /index.php/Admin/Index/index_v1.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-06-12T19:38:03+08:00 ] 127.0.0.1 /index.php/Admin/Index/role?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: menu_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-06-12T19:38:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/role?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: menu_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2017-06-12T19:39:40+08:00 ] 127.0.0.1 /index.php/Admin/Index/role?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: menu_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-06-12T19:40:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/role?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: menu_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2017-06-12T19:42:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/role?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `admin` WHERE `admin_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(./Application/Admin/Conf/version.txt): failed to open stream: No such file or directory D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 74 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpstudy\WWW\hafeisiadmin\Application\Admin\Controller\FatherController.class.php 第 77 行.
+SQL: SELECT * FROM `admin_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 62 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Use of undefined constant vo - assumed 'vo' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Use of undefined constant kid_list - assumed 'kid_list' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: kid_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 62 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Use of undefined constant vo - assumed 'vo' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Use of undefined constant kid_list - assumed 'kid_list' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: kid_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 62 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Use of undefined constant vo - assumed 'vo' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Use of undefined constant kid_list - assumed 'kid_list' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: kid_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 62 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Undefined index: m_id D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 63 行.
+NOTIC: [8] Use of undefined constant vo - assumed 'vo' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Use of undefined constant kid_list - assumed 'kid_list' D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+NOTIC: [8] Undefined index: kid_list D:\phpstudy\WWW\hafeisiadmin\Application\Runtime\Cache\Admin\b9bea5d37506456b20f06ed60dcbf915.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+

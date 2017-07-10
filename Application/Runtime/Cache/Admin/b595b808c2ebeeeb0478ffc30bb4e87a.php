@@ -1,930 +1,1041 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>H+ 后台主题UI框架 - 主页</title>
+    <meta charset="utf-8" />
+    <title>诚享公告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- basic styles -->
+    <link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
 
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/Public/assets/css/font-awesome-ie7.min.css" />
+    <![endif]-->
+    <link href="/Public/assets/css/sweetalert/sweetalert.css" rel="stylesheet">
+    <!-- page specific plugin styles -->
 
-    <!--[if lt IE 8]>
-    <meta http-equiv="refresh" content="0;ie.html" />
+    <!-- fonts -->
+
+    <link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/Public/assets/css/font-awesome-ie7.min.css" />
     <![endif]-->
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="/Public/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-    <link href="/Public/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="/Public/css/animate.min.css" rel="stylesheet">
-    <link href="/Public/css/style.min.css?v=4.0.0" rel="stylesheet">
+    <!-- page specific plugin styles -->
+
+    <link rel="stylesheet" href="/Public/assets/css/select2.css" />
+
+    <!-- fonts -->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+    <!-- ace styles -->
+
+    <link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/ace-skins.min.css" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/Public/assets/css/ace-ie.min.css" />
+    <![endif]-->
+
+    <!-- inline styles related to this page -->
+
+    <!-- ace settings handler -->
+
+    <script src="/Public/assets/js/ace-extra.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="/Public/assets/js/html5shiv.js"></script>
+    <script src="/Public/assets/js/respond.min.js"></script>
+
+    <!-- ace styles -->
+
+    <link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/ace-skins.min.css" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/Public/assets/css/ace-ie.min.css" />
+    <![endif]-->
+
+    <!-- inline styles related to this page -->
+
+    <!-- ace settings handler -->
+    <script src="/Public/assets/js/sweetalert/sweetalert.min.js"></script>
+    <script src="/Public/assets/js/ace-extra.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="/Public/assets/js/html5shiv.js"></script>
+    <script src="/Public/assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
-    <div id="wrapper">
-        <!--左侧导航开始-->
-        <nav class="navbar-default navbar-static-side" role="navigation">
-            <div class="nav-close"><i class="fa fa-times-circle"></i>
-            </div>
-            <div class="sidebar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li class="nav-header">
-                        <div class="dropdown profile-element">
-                            <span><img alt="image" class="img-circle" src="/Public/img/profile_small.jpg" /></span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
-                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
-                                </li>
-                                <li><a class="J_menuItem" href="profile.html">个人资料</a>
-                                </li>
-                                <li><a class="J_menuItem" href="contacts.html">联系我们</a>
-                                </li>
-                                <li><a class="J_menuItem" href="mailbox.html">信箱</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="login.html">安全退出</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="logo-element">H+
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-home"></i>
-                            <span class="nav-label">主页</span>
-                            <span class="fa arrow"></span>
-                        </a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a class="J_menuItem" href="index_v1.html" data-index="0">主页示例一</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="/index.php/Admin/Index/index_v2.html">主页示例二</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="/index.php/Admin/Index/index_v3.html">主页示例三</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="/index.php/Admin/Index/index_v4.html">主页示例四</a>
-                            </li>
-                            <li>
-                                <a href="index_v5.html" target="_blank">主页示例五</a>
-                            </li>
-                        </ul>
+<body>
+<div class="navbar navbar-default" id="navbar">
+    <script type="text/javascript">
+        try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+    </script>
 
-                    </li>
-                    <li>
-                        <a class="J_menuItem" href="layouts.html"><i class="fa fa-columns"></i> <span class="nav-label">布局</span></a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa fa-bar-chart-o"></i>
-                            <span class="nav-label">统计图表</span>
-                            <span class="fa arrow"></span>
-                        </a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a class="J_menuItem" href="graph_echarts.html">百度ECharts</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_flot.html">Flot</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_morris.html">Morris.js</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_rickshaw.html">Rickshaw</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_peity.html">Peity</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_sparkline.html">Sparkline</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="graph_metrics.html">图表组合</a>
-                            </li>
-                        </ul>
-                    </li>
+    <div class="navbar-container" id="navbar-container">
+        <div class="navbar-header pull-left">
+            <a href="#" class="navbar-brand">
+                <small>
+                    <i class="icon-leaf"></i>
+                    诚享东方信息推送系统
+                </small>
+            </a><!-- /.brand -->
+        </div><!-- /.navbar-header -->
 
-                    <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">信箱 </span><span class="label label-warning pull-right">16</span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="mailbox.html">收件箱</a>
-                            </li>
-                            <li><a class="J_menuItem" href="mail_detail.html">查看邮件</a>
-                            </li>
-                            <li><a class="J_menuItem" href="mail_compose.html">写信</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">表单</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="form_basic.html">基本表单</a>
-                            </li>
-                            <li><a class="J_menuItem" href="form_validate.html">表单验证</a>
-                            </li>
-                            <li><a class="J_menuItem" href="form_advanced.html">高级插件</a>
-                            </li>
-                            <li><a class="J_menuItem" href="form_wizard.html">表单向导</a>
-                            </li>
-                            <li>
-                                <a href="#">文件上传 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="form_webuploader.html">百度WebUploader</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="form_file_upload.html">DropzoneJS</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="form_avatar.html">头像裁剪上传</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">编辑器 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="form_editors.html">富文本编辑器</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="form_simditor.html">simditor</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="form_markdown.html">MarkDown编辑器</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="code_editor.html">代码编辑器</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="suggest.html">搜索自动补全</a>
-                            </li>
-                            <li><a class="J_menuItem" href="layerdate.html">日期选择器layerDate</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="contacts.html">联系人</a>
-                            </li>
-                            <li><a class="J_menuItem" href="profile.html">个人资料</a>
-                            </li>
-                            <li>
-                                <a href="#">项目管理 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="projects.html">项目</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="project_detail.html">项目详情</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="teams_board.html">团队管理</a>
-                            </li>
-                            <li><a class="J_menuItem" href="social_feed.html">信息流</a>
-                            </li>
-                            <li><a class="J_menuItem" href="clients.html">客户管理</a>
-                            </li>
-                            <li><a class="J_menuItem" href="file_manager.html">文件管理器</a>
-                            </li>
-                            <li><a class="J_menuItem" href="calendar.html">日历</a>
-                            </li>
-                            <li>
-                                <a href="#">博客 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="blog.html">文章列表</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="article.html">文章详情</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">时间轴 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="timeline.html">时间轴</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="timeline_v2.html">时间轴v2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="pin_board.html">标签墙</a>
-                            </li>
-                            <li>
-                                <a href="#">单据 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="invoice.html">单据</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="invoice_print.html">单据打印</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="search_results.html">搜索结果</a>
-                            </li>
-                            <li><a class="J_menuItem" href="forum_main.html">论坛</a>
-                            </li>
-                            <li>
-                                <a href="#">即时通讯 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="chat_view.html">聊天窗口</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="webim.html">layIM</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">登录注册相关 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a href="login.html" target="_blank">登录页面</a>
-                                    </li>
-                                    <li><a href="login_v2.html" target="_blank">登录页面v2</a>
-                                    </li>
-                                    <li><a href="register.html" target="_blank">注册页面</a>
-                                    </li>
-                                    <li><a href="lockscreen.html" target="_blank">登录超时</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="404.html">404页面</a>
-                            </li>
-                            <li><a class="J_menuItem" href="500.html">500页面</a>
-                            </li>
-                            <li><a class="J_menuItem" href="empty_page.html">空白页</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI元素</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="typography.html">排版</a>
-                            </li>
-                            <li>
-                                <a href="#">字体图标 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a class="J_menuItem" href="fontawesome.html">Font Awesome</a>
-                                    </li>
-                                    <li>
-                                        <a class="J_menuItem" href="glyphicons.html">Glyphicon</a>
-                                    </li>
-                                    <li>
-                                        <a class="J_menuItem" href="iconfont.html">阿里巴巴矢量图标库</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">拖动排序 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="draggable_panels.html">拖动面板</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="agile_board.html">任务清单</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="buttons.html">按钮</a>
-                            </li>
-                            <li><a class="J_menuItem" href="tabs_panels.html">选项卡 &amp; 面板</a>
-                            </li>
-                            <li><a class="J_menuItem" href="notifications.html">通知 &amp; 提示</a>
-                            </li>
-                            <li><a class="J_menuItem" href="badges_labels.html">徽章，标签，进度条</a>
-                            </li>
-                            <li>
-                                <a class="J_menuItem" href="grid_options.html">栅格</a>
-                            </li>
-                            <li><a class="J_menuItem" href="plyr.html">视频、音频</a>
-                            </li>
-                            <li>
-                                <a href="#">弹框插件 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="layer.html">Web弹层组件layer</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="modal_window.html">模态窗口</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="sweetalert.html">SweetAlert</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">树形视图 <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li><a class="J_menuItem" href="jstree.html">jsTree</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="tree_view.html">Bootstrap Tree View</a>
-                                    </li>
-                                    <li><a class="J_menuItem" href="nestable_list.html">nestable</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a class="J_menuItem" href="toastr_notifications.html">Toastr通知</a>
-                            </li>
-                            <li><a class="J_menuItem" href="diff.html">文本对比</a>
-                            </li>
-                            <li><a class="J_menuItem" href="spinners.html">加载动画</a>
-                            </li>
-                            <li><a class="J_menuItem" href="widgets.html">小部件</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">表格</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="table_basic.html">基本表格</a>
-                            </li>
-                            <li><a class="J_menuItem" href="table_data_tables.html">DataTables</a>
-                            </li>
-                            <li><a class="J_menuItem" href="table_jqgrid.html">jqGrid</a>
-                            </li>
-                            <li><a class="J_menuItem" href="table_foo_table.html">Foo Tables</a>
-                            </li>
-                            <li><a class="J_menuItem" href="table_bootstrap.html">Bootstrap Table
-                                <span class="label label-danger pull-right">推荐</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">相册</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="basic_gallery.html">基本图库</a>
-                            </li>
-                            <li><a class="J_menuItem" href="carousel.html">图片切换</a>
-                            </li>
-                            <li><a class="J_menuItem" href="layerphotos.html">layer相册</a>
-                            </li>
-                            <li><a class="J_menuItem" href="blueimp.html">Blueimp相册</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="J_menuItem" href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS动画</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">工具 </span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="form_builder.html">表单构建器</a>
-                            </li>
-                        </ul>
-                    </li>
+        <div class="navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
 
-                </ul>
-            </div>
-        </nav>
-        <!--左侧导航结束-->
-        <!--右侧部分开始-->
-        <div id="page-wrapper" class="gray-bg dashbard-1">
-            <div class="row border-bottom">
-                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-                    <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                        <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
-                            <div class="form-group">
-                                <input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">
-                            </div>
-                        </form>
-                    </div>
-                    <ul class="nav navbar-top-links navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-messages">
-                                <li class="m-t-xs">
-                                    <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="/Public/img/a7.jpg">
-                                        </a>
-                                        <div class="media-body">
-                                            <small class="pull-right">46小时前</small>
-                                            <strong>小四</strong> 这个在日本投降书上签字的军官，建国后一定是个不小的干部吧？
-                                            <br>
-                                            <small class="text-muted">3天前 2014.11.8</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="dropdown-messages-box">
-                                        <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="/Public/img/a4.jpg">
-                                        </a>
-                                        <div class="media-body ">
-                                            <small class="pull-right text-navy">25小时前</small>
-                                            <strong>国民岳父</strong> 如何看待“男子不满自己爱犬被称为狗，刺伤路人”？——这人比犬还凶
-                                            <br>
-                                            <small class="text-muted">昨天</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a class="J_menuItem" href="mailbox.html">
-                                            <i class="fa fa-envelope"></i> <strong> 查看所有消息</strong>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-alerts">
-                                <li>
-                                    <a href="mailbox.html">
-                                        <div>
-                                            <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
-                                            <span class="pull-right text-muted small">4分钟前</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="profile.html">
-                                        <div>
-                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
-                                            <span class="pull-right text-muted small">12分钟钱</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <div class="text-center link-block">
-                                        <a class="J_menuItem" href="notifications.html">
-                                            <strong>查看所有 </strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="hidden-xs">
-                            <a href="index_v1.html" class="J_menuItem" data-index="0"><i class="fa fa-cart-arrow-down"></i> 购买</a>
-                        </li>
-                        <li class="dropdown hidden-xs">
-                            <a class="right-sidebar-toggle" aria-expanded="false">
-                                <i class="fa fa-tasks"></i> 主题
+                <?php $parent_role = $_SESSION['parent_role']; if($parent_role == 0){ $is_top = 1; } ?>
+
+
+                <li class="light-blue">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <img class="nav-user-photo" src="/Public/upload/<?php echo ($admin_img); ?>" alt="<?php echo ($admin_name); ?>'s Photo" />
+                        <span class="user-info">
+									<small>欢迎光临,</small>
+									<?php echo ($admin_name); ?>
+								</span>
+
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+
+
+                        <li class="active">
+                            <a href="<?php echo U('Index/moPassword');?>">
+                                <i class="icon-cog"></i>
+                                修改密码
                             </a>
                         </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="row content-tabs">
-                <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
-                </button>
-                <nav class="page-tabs J_menuTabs">
-                    <div class="page-tabs-content">
-                        <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
-                    </div>
-                </nav>
-                <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
-                </button>
-                <div class="btn-group roll-nav roll-right">
-                    <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
 
-                    </button>
-                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
-                        <li class="J_tabShowActive"><a>定位当前选项卡</a>
-                        </li>
                         <li class="divider"></li>
-                        <li class="J_tabCloseAll"><a>关闭全部选项卡</a>
-                        </li>
-                        <li class="J_tabCloseOther"><a>关闭其他选项卡</a>
+
+                        <li>
+                            <a href="<?php echo U('Index/logout');?>">
+                                <i class="icon-off"></i>
+                                退出
+                            </a>
                         </li>
                     </ul>
-                </div>
-                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
-            </div>
-            <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="/index.php/Admin/Index/index_v1.html?v=4.0" frameborder="0" data-id="index_v1.html" seamless></iframe>
-            </div>
-            <div class="footer">
-                <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
-                </div>
-            </div>
-        </div>
-        <!--右侧部分结束-->
-        <!--右侧边栏开始-->
-        <div id="right-sidebar">
-            <div class="sidebar-container">
+                </li>
+            </ul><!-- /.ace-nav -->
+        </div><!-- /.navbar-header -->
+    </div><!-- /.container -->
+</div>
 
-                <ul class="nav nav-tabs navs-3">
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
 
-                    <li class="active">
-                        <a data-toggle="tab" href="#tab-1">
-                            <i class="fa fa-gear"></i> 主题
-                        </a>
-                    </li>
-                    <li class=""><a data-toggle="tab" href="#tab-2">
-                        通知
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+
+        <div class="sidebar" id="sidebar">
+            <script type="text/javascript">
+                try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+            </script>
+
+            <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                    <button class="btn btn-success">
+                        <i class="icon-signal"></i>
+                    </button>
+
+                    <button class="btn btn-info">
+                        <i class="icon-pencil"></i>
+                    </button>
+
+                    <button class="btn btn-warning">
+                        <i class="icon-group"></i>
+                    </button>
+
+                    <button class="btn btn-danger">
+                        <i class="icon-cogs"></i>
+                    </button>
+                </div>
+
+                <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                    <span class="btn btn-success"></span>
+
+                    <span class="btn btn-info"></span>
+
+                    <span class="btn btn-warning"></span>
+
+                    <span class="btn btn-danger"></span>
+                </div>
+            </div><!-- #sidebar-shortcuts -->
+
+            <ul class="nav nav-list">
+                <li class="active">
+                    <a href="<?php echo U('Index/index');?>">
+                        <i class="icon-dashboard"></i>
+                        <span class="menu-text"> 主页 </span>
                     </a>
-                    </li>
-                    <li><a data-toggle="tab" href="#tab-3">
-                        项目进度
+                </li>
+                <li>
+                    <a href="<?php echo U('News/index');?>">
+                        <i class="icon-edit"></i>
+                        <span class="menu-text"> 编辑新文章 </span>
                     </a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane active">
-                        <div class="sidebar-title">
-                            <h3> <i class="fa fa-comments-o"></i> 主题设置</h3>
-                            <small><i class="fa fa-tim"></i> 你可以从这里选择和预览主题的布局和样式，这些设置会被保存在本地，下次打开的时候会直接应用这些设置。</small>
-                        </div>
-                        <div class="skin-setttings">
-                            <div class="title">主题设置</div>
-                            <div class="setings-item">
-                                <span>收起左侧菜单</span>
-                                <div class="switch">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
-                                        <label class="onoffswitch-label" for="collapsemenu">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>固定顶部</span>
-
-                                <div class="switch">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="fixednavbar" class="onoffswitch-checkbox" id="fixednavbar">
-                                        <label class="onoffswitch-label" for="fixednavbar">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="setings-item">
-                                <span>
-                        固定宽度
-                    </span>
-
-                                <div class="switch">
-                                    <div class="onoffswitch">
-                                        <input type="checkbox" name="boxedlayout" class="onoffswitch-checkbox" id="boxedlayout">
-                                        <label class="onoffswitch-label" for="boxedlayout">
-                                            <span class="onoffswitch-inner"></span>
-                                            <span class="onoffswitch-switch"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="title">皮肤选择</div>
-                            <div class="setings-item default-skin nb">
-                                <span class="skin-name ">
-                         <a href="#" class="s-skin-0">
-                             默认皮肤
-                         </a>
-                    </span>
-                            </div>
-                            <div class="setings-item blue-skin nb">
-                                <span class="skin-name ">
-                        <a href="#" class="s-skin-1">
-                            蓝色主题
-                        </a>
-                    </span>
-                            </div>
-                            <div class="setings-item yellow-skin nb">
-                                <span class="skin-name ">
-                        <a href="#" class="s-skin-3">
-                            黄色/紫色主题
-                        </a>
-                    </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-pane">
-
-                        <div class="sidebar-title">
-                            <h3> <i class="fa fa-comments-o"></i> 最新通知</h3>
-                            <small><i class="fa fa-tim"></i> 您当前有10条未读信息</small>
-                        </div>
-
-                        <div>
-
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a1.jpg">
-
-                                        <div class="m-t-xs">
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-
-                                        据天津日报报道：瑞海公司董事长于学伟，副董事长董社轩等10人在13日上午已被控制。
-                                        <br>
-                                        <small class="text-muted">今天 4:21</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a2.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        HCY48之音乐大魔王会员专属皮肤已上线，快来一键换装拥有他，宣告你对华晨宇的爱吧！
-                                        <br>
-                                        <small class="text-muted">昨天 2:45</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a3.jpg">
-
-                                        <div class="m-t-xs">
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        写的好！与您分享
-                                        <br>
-                                        <small class="text-muted">昨天 1:10</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a4.jpg">
-                                    </div>
-
-                                    <div class="media-body">
-                                        国外极限小子的炼成！这还是亲生的吗！！
-                                        <br>
-                                        <small class="text-muted">昨天 8:37</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a8.jpg">
-                                    </div>
-                                    <div class="media-body">
-
-                                        一只流浪狗被收留后，为了减轻主人的负担，坚持自己觅食，甚至......有些东西，可能她比我们更懂。
-                                        <br>
-                                        <small class="text-muted">今天 4:21</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a7.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        这哥们的新视频又来了，创意杠杠滴，帅炸了！
-                                        <br>
-                                        <small class="text-muted">昨天 2:45</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a3.jpg">
-
-                                        <div class="m-t-xs">
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        最近在补追此剧，特别喜欢这段表白。
-                                        <br>
-                                        <small class="text-muted">昨天 1:10</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/Public/img/a4.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        我发起了一个投票 【你认为下午大盘会翻红吗？】
-                                        <br>
-                                        <small class="text-muted">星期一 8:37</small>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="tab-3" class="tab-pane">
-
-                        <div class="sidebar-title">
-                            <h3> <i class="fa fa-cube"></i> 最新任务</h3>
-                            <small><i class="fa fa-tim"></i> 您当前有14个任务，10个已完成</small>
-                        </div>
-
-                        <ul class="sidebar-list">
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <i class="icon-comments "></i>
+                        <span class="menu-text"> 用户组管理 </span>
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo U('Group/index');?>">
+                                <i class="icon-double-angle-right"></i>
+                                用户组列表
+                            </a>
+                        </li>
+                        <?php if($is_top){ ?>
                             <li>
-                                <a href="#">
-                                    <div class="small pull-right m-t-xs">9小时以后</div>
-                                    <h4>市场调研</h4> 按要求接收教材；
-
-                                    <div class="small">已完成： 22%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
-                                    </div>
-                                    <div class="small text-muted m-t-xs">项目截止： 4:00 - 2015.10.01</div>
+                                <a href="<?php echo U('Group/add');?>">
+                                    <i class="icon-double-angle-right"></i>
+                                    新增用户组
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small pull-right m-t-xs">9小时以后</div>
-                                    <h4>可行性报告研究报上级批准 </h4> 编写目的编写本项目进度报告的目的在于更好的控制软件开发的时间,对团队成员的 开发进度作出一个合理的比对
+                        <?php } ?>
 
-                                    <div class="small">已完成： 48%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 48%;" class="progress-bar"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small pull-right m-t-xs">9小时以后</div>
-                                    <h4>立项阶段</h4> 东风商用车公司 采购综合综合查询分析系统项目进度阶段性报告武汉斯迪克科技有限公司
+                    </ul>
+                </li>
 
-                                    <div class="small">已完成： 14%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="label label-primary pull-right">NEW</span>
-                                    <h4>设计阶段</h4>
-                                    <!--<div class="small pull-right m-t-xs">9小时以后</div>-->
-                                    项目进度报告(Project Progress Report)
-                                    <div class="small">已完成： 22%</div>
-                                    <div class="small text-muted m-t-xs">项目截止： 4:00 - 2015.10.01</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small pull-right m-t-xs">9小时以后</div>
-                                    <h4>拆迁阶段</h4> 科研项目研究进展报告 项目编号: 项目名称: 项目负责人:
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <i class="icon-user"></i>
+                        <span class="menu-text"> 经销商管理 </span>
 
-                                    <div class="small">已完成： 22%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
-                                    </div>
-                                    <div class="small text-muted m-t-xs">项目截止： 4:00 - 2015.10.01</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small pull-right m-t-xs">9小时以后</div>
-                                    <h4>建设阶段 </h4> 编写目的编写本项目进度报告的目的在于更好的控制软件开发的时间,对团队成员的 开发进度作出一个合理的比对
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo U('Seller/index');?>">
+                                <i class="icon-double-angle-right"></i>
+                                用户列表
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo U('Seller/opinion');?>">
+                                <i class="icon-double-angle-right"></i>
+                                用户反馈
+                            </a>
+                        </li>
 
-                                    <div class="small">已完成： 48%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 48%;" class="progress-bar"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small pull-right m-t-xs">9小时以后</div>
-                                    <h4>获证开盘</h4> 编写目的编写本项目进度报告的目的在于更好的控制软件开发的时间,对团队成员的 开发进度作出一个合理的比对
+                    </ul>
 
-                                    <div class="small">已完成： 14%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
-                                    </div>
-                                </a>
-                            </li>
+                </li>
 
-                        </ul>
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <i class="icon-user"></i>
+                        <span class="menu-text"> 公司用户管理 </span>
 
-                    </div>
-                </div>
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
 
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo U('Company/index');?>">
+                                <i class="icon-double-angle-right"></i>
+                                用户列表
+                            </a>
+                        </li>
+
+                        <?php if($is_top){ ?>
+                                <li>
+                                    <a href="<?php echo U('Company/add');?>">
+                                        <i class="icon-double-angle-right"></i>
+                                        新增用户
+                                    </a>
+                                </li>
+                          <?php } ?>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <i class="icon-envelope"></i>
+                        <span class="menu-text"> 文章管理 </span>
+
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo U('News/newsList');?>">
+                                <i class="icon-double-angle-right"></i>
+                                文章列表
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+
+            </ul><!-- /.nav-list -->
+
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
             </div>
+
+            <script type="text/javascript">
+                try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+            </script>
         </div>
-        <!--右侧边栏结束-->
-        <!--mini聊天窗口开始-->
-        <div class="small-chat-box fadeInRight animated">
 
-            <div class="heading" draggable="true">
-                <small class="chat-date pull-right">
-                    2015.9.1
-                </small> 与 Beau-zihan 聊天中
+<div class="main-content">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+        </script>
+
+        <ul class="breadcrumb">
+            <li>
+                <i class="icon-home home-icon"></i>
+                <a href="/index.php/Admin/Index/index">主页</a>
+            </li>
+
+
+            <li class="active">首页</li>
+        </ul><!-- .breadcrumb -->
+
+
+    </div>
+
+    <div class="page-content">
+        <div class="page-header">
+            <h1>
+                首页
+
+            </h1>
+        </div><!-- /.page-header -->
+
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- PAGE CONTENT BEGINS -->
+
+
+                <div class="hr dotted"></div>
+
+                <div>
+                    <div id="user-profile-1" class="user-profile row">
+                        <div class="col-xs-12 col-sm-3 center">
+                            <div>
+												<span class="profile-picture">
+													<img width="180px" id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="/Public/upload/<?php echo ($admin_img); ?>" />
+												</span>
+
+                                <div class="space-4"></div>
+
+                                <div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
+                                    <div class="inline position-relative">
+                                        <a href="#" class="user-title-label dropdown-toggle" data-toggle="dropdown">
+                                            <i class="icon-circle light-green middle"></i>
+                                            &nbsp;
+                                            <span class="white"><?php echo ($admin_name); ?></span>
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-6"></div>
+
+                            <div class="profile-contact-info">
+                                <div class="profile-contact-links align-left">
+                                    <a class="btn btn-link">
+                                        <i class="icon-plus-sign bigger-120 green"></i>
+                                        所属组 ： <?php echo ($role_name); ?>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="hr hr12 dotted"></div>
+
+                            <div class="clearfix">
+                                <div class="grid2">
+                                    <span class="bigger-175 blue"><?php echo ((isset($parent_role_name ) && ($parent_role_name !== ""))?($parent_role_name ):'顶级'); ?></span>
+
+                                    <br />
+                                    所属上级
+                                </div>
+
+                                <div class="grid2">
+                                    <span class="bigger-175 blue"><?php echo ((isset($children ) && ($children !== ""))?($children ):"无"); ?></span>
+
+                                    <br />
+                                    下级
+                                </div>
+                            </div>
+
+                            <div class="hr hr16 dotted"></div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="center">
+												<span class="btn btn-app btn-sm btn-light no-hover">
+													<span class="line-height-1 bigger-170 blue"> <?php echo ($newsNum); ?> </span>
+
+													<br />
+													<span class="line-height-1 smaller-90" onclick='url("<?php echo U('News/newsList' , array('type' => 'pass'));?>")'> 已发布文章 </span>
+												</span>
+                                <span class="btn btn-app btn-pink btn-sm">
+													<span class="line-height-1 bigger-170 "> <?php echo ($needCheck); ?> </span>
+
+													<br />
+													<span class="line-height-1 smaller-90" onclick='url("<?php echo U('News/newsList' , array('type' => 'needCheck'));?>")'> 需审核文章 </span>
+                                </span>
+
+                                <span class="btn btn-app btn-sm btn-yellow no-hover">
+
+                                  <span class="line-height-1 bigger-170"> <?php echo ($noCheck); ?> </span>
+													<br />
+													<span class="line-height-1 smaller-90" onclick='url("<?php echo U('News/newsList' , array('type' => 'noCheck'));?>")'>待审核文章  </span>
+												</span>
+
+
+                                <span class="btn btn-app btn-sm btn-success no-hover">
+													<span class="line-height-1 bigger-170"> <?php echo ($noPass); ?> </span>
+
+													<br />
+													<span class="line-height-1 smaller-90" onclick='url("<?php echo U('News/newsList' , array('type' => 'noPass'));?>")'>未通过文章 </span>
+												</span>
+
+                                <a class="btn btn-app btn-info btn-sm" href="<?php echo U('News/index');?>">
+                                    <i class="icon-envelope bigger-200"></i>
+                                    新增文章
+
+                                </a>
+                            </div>
+
+                            <div class="space-12"></div>
+
+                            <div class="profile-user-info profile-user-info-striped">
+                                <div class="profile-info-row">
+                                    <div class="profile-info-name"> 用户名 </div>
+
+                                    <div class="profile-info-value">
+                                        <span class="editable" id="username"><?php echo ($userInfo["username"]); ?></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="profile-info-row">
+                                    <div class="profile-info-name"> 手机号 </div>
+
+                                    <div class="profile-info-value">
+                                        <span class="editable" id="age"><?php echo ($userInfo["mobile"]); ?></span>
+                                    </div>
+                                </div>
+                                <div class="profile-info-row">
+                                    <div class="profile-info-name"> 身份证号 </div>
+
+                                    <div class="profile-info-value">
+                                        <span class="editable" id="idcard"><?php echo ($userInfo["idcard"]); ?></span>
+                                    </div>
+                                </div>
+
+                                <div class="profile-info-row">
+                                    <div class="profile-info-name"> 加入时间 </div>
+
+                                    <div class="profile-info-value">
+                                        <span class="editable" id="signup"><?php echo ($add_time); ?></span>
+                                    </div>
+                                </div>
+
+                                <div class="profile-info-row">
+                                    <div class="profile-info-name"> 上次登录时间 </div>
+
+                                    <div class="profile-info-value">
+                                        <span class="editable" id="login"><?php if($last_time != null): echo (date('Y-m-d H:i:s' , $last_time )); else: ?>&nbsp;<?php endif; ?></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="space-6"></div>
+                            <div class="center hidden">
+                                <a href="<?php echo U('Index/modInfo');?>" class="btn btn-sm btn-primary">
+                                    <span class="bigger-110">修改信息</span>
+
+                                    <i class="icon-on-right icon-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="space-20"></div>
+
+                            <div class="widget-box transparent">
+                                <div class="widget-header widget-header-small">
+                                    <h4 class="blue smaller">
+                                        <i class="icon-rss orange"></i>
+                                        最近发布
+                                    </h4>
+
+
+                                </div>
+
+                                <div class="widget-body">
+                                    <div class="widget-main padding-8">
+                                        <div id="profile-feed-1" class="profile-feed">
+                                            <?php if(is_array($list)): foreach($list as $k=>$v): ?><div class="profile-activity clearfix">
+                                                <div>
+                                                    <img class="pull-left" alt="Alex Doe's avatar" src="/Public/upload/<?php echo ($v["headpic"]); ?>" />
+                                                    <a class="user" href="#"> <?php echo ($v["name"]); ?> : </a>
+                                                    <?php echo ($v["news_title"]); ?>.
+                                                    <a href="<?php echo U('News/detail' , array('id' => $v['news_id']));?>"><i class="normal-icon icon-eye-open info bigger-130"></i></a>
+
+                                                    <div class="time">
+                                                        <i class="icon-time bigger-110"></i>
+                                                        <?php echo ($v["issue_time"]); ?>
+                                                    </div>
+                                                </div>
+
+                                            </div><?php endforeach; endif; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="space-6"></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- PAGE CONTENT ENDS -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.page-content -->
+</div><!-- /.main-content -->
+
+<div class="ace-settings-container" id="ace-settings-container">
+    <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+        <i class="icon-cog bigger-150"></i>
+    </div>
+
+    <div class="ace-settings-box" id="ace-settings-box">
+        <div>
+            <div class="pull-left">
+                <select id="skin-colorpicker" class="hide">
+                    <option data-skin="default" value="#438EB9">#438EB9</option>
+                    <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                    <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                    <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                </select>
             </div>
-
-            <div class="content">
-
-                <div class="left">
-                    <div class="author-name">
-                        Beau-zihan <small class="chat-date">
-                        10:02
-                    </small>
-                    </div>
-                    <div class="chat-message active">
-                        你好
-                    </div>
-
-                </div>
-                <div class="right">
-                    <div class="author-name">
-                        游客
-                        <small class="chat-date">
-                            11:24
-                        </small>
-                    </div>
-                    <div class="chat-message">
-                        你好，请问H+有帮助文档吗？
-                    </div>
-                </div>
-                <div class="left">
-                    <div class="author-name">
-                        Beau-zihan
-                        <small class="chat-date">
-                            08:45
-                        </small>
-                    </div>
-                    <div class="chat-message active">
-                        有，购买的H+源码包中有帮助文档，位于docs文件夹下
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="author-name">
-                        游客
-                        <small class="chat-date">
-                            11:24
-                        </small>
-                    </div>
-                    <div class="chat-message">
-                        那除了帮助文档还提供什么样的服务？
-                    </div>
-                </div>
-                <div class="left">
-                    <div class="author-name">
-                        Beau-zihan
-                        <small class="chat-date">
-                            08:45
-                        </small>
-                    </div>
-                    <div class="chat-message active">
-                        1.所有源码(未压缩、带注释版本)；
-                        <br> 2.说明文档；
-                        <br> 3.终身免费升级服务；
-                        <br> 4.必要的技术支持；
-                        <br> 5.付费二次开发服务；
-                        <br> 6.授权许可；
-                        <br> ……
-                        <br>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="form-chat">
-                <div class="input-group input-group-sm">
-                    <input type="text" class="form-control"> <span class="input-group-btn"> <button
-                        class="btn btn-primary" type="button">发送
-                </button> </span>
-                </div>
-            </div>
-
+            <span>&nbsp; Choose Skin</span>
         </div>
-        <div id="small-chat">
-            <span class="badge badge-warning pull-right">5</span>
-            <a class="open-small-chat">
-                <i class="fa fa-comments"></i>
 
-            </a>
+        <div>
+            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+            <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+        </div>
+
+        <div>
+            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+            <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+        </div>
+
+        <div>
+            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+            <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+        </div>
+
+        <div>
+            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+            <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+            <label class="lbl" for="ace-settings-add-container">
+                Inside
+                <b>.container</b>
+            </label>
         </div>
     </div>
-    <script src="/Public/js/jquery.min.js?v=2.1.4"></script>
-    <script src="/Public/js/bootstrap.min.js?v=3.3.5"></script>
-    <script src="/Public/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="/Public/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="/Public/js/plugins/layer/layer.min.js"></script>
-    <script src="/Public/js/hplus.min.js?v=4.0.0"></script>
-    <script type="text/javascript" src="/Public/js/contabs.min.js"></script>
-    <script src="/Public/js/plugins/pace/pace.min.js"></script>
-</body>
+</div><!-- /#ace-settings-container -->
+</div><!-- /.main-container-inner -->
 
+<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+    <i class="icon-double-angle-up icon-only bigger-110"></i>
+</a>
+</div><!-- /.main-container -->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+
+
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+
+<![endif]-->
+<script>
+    function url(url){
+        window.location.href = "<?php echo U('News/detail');?>?id="+url;
+    }
+
+</script>
+<!--[if !IE]> -->
+<script>
+    function url(url){
+        window.location.href = url;
+    }
+</script>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+</script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='/Public/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+    if("ontouchend" in document) document.write("<script src='/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="/Public/assets/js/bootstrap.min.js"></script>
+<script src="/Public/assets/js/typeahead-bs2.min.js"></script>
+
+<!-- page specific plugin scripts -->
+
+<!--[if lte IE 8]>
+<script src="/Public/assets/js/excanvas.min.js"></script>
+<![endif]-->
+
+<script src="/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/Public/assets/js/jquery.gritter.min.js"></script>
+<script src="/Public/assets/js/bootbox.min.js"></script>
+<script src="/Public/assets/js/jquery.slimscroll.min.js"></script>
+<script src="/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/Public/assets/js/jquery.hotkeys.min.js"></script>
+<script src="/Public/assets/js/bootstrap-wysiwyg.min.js"></script>
+<script src="/Public/assets/js/select2.min.js"></script>
+<script src="/Public/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="/Public/assets/js/fuelux/fuelux.spinner.min.js"></script>
+<script src="/Public/assets/js/x-editable/bootstrap-editable.min.js"></script>
+<script src="/Public/assets/js/x-editable/ace-editable.min.js"></script>
+<script src="/Public/assets/js/jquery.maskedinput.min.js"></script>
+
+<!-- ace scripts -->
+
+<script src="/Public/assets/js/ace-elements.min.js"></script>
+<script src="/Public/assets/js/ace.min.js"></script>
+
+<!-- inline scripts related to this page -->
+
+<script type="text/javascript">
+    jQuery(function($) {
+
+        //editables on first profile page
+        $.fn.editable.defaults.mode = 'inline';
+        $.fn.editableform.loading = "<div class='editableform-loading'><i class='light-blue icon-2x icon-spinner icon-spin'></i></div>";
+        $.fn.editableform.buttons = '<button type="submit" class="btn btn-info editable-submit"><i class="icon-ok icon-white"></i></button>'+
+            '<button type="button" class="btn editable-cancel"><i class="icon-remove"></i></button>';
+
+        //editables
+        $('#username').editable({
+            type: 'text',
+            name: 'username'
+        });
+
+
+        var countries = [];
+        $.each({ "CA": "Canada", "IN": "India", "NL": "Netherlands", "TR": "Turkey", "US": "United States"}, function(k, v) {
+            countries.push({id: k, text: v});
+        });
+
+        var cities = [];
+        cities["CA"] = [];
+        $.each(["Toronto", "Ottawa", "Calgary", "Vancouver"] , function(k, v){
+            cities["CA"].push({id: v, text: v});
+        });
+        cities["IN"] = [];
+        $.each(["Delhi", "Mumbai", "Bangalore"] , function(k, v){
+            cities["IN"].push({id: v, text: v});
+        });
+        cities["NL"] = [];
+        $.each(["Amsterdam", "Rotterdam", "The Hague"] , function(k, v){
+            cities["NL"].push({id: v, text: v});
+        });
+        cities["TR"] = [];
+        $.each(["Ankara", "Istanbul", "Izmir"] , function(k, v){
+            cities["TR"].push({id: v, text: v});
+        });
+        cities["US"] = [];
+        $.each(["New York", "Miami", "Los Angeles", "Chicago", "Wysconsin"] , function(k, v){
+            cities["US"].push({id: v, text: v});
+        });
+
+        var currentValue = "NL";
+        $('#country').editable({
+            type: 'select2',
+            value : 'NL',
+            source: countries,
+            success: function(response, newValue) {
+                if(currentValue == newValue) return;
+                currentValue = newValue;
+
+                var new_source = (!newValue || newValue == "") ? [] : cities[newValue];
+
+                //the destroy method is causing errors in x-editable v1.4.6
+                //it worked fine in v1.4.5
+                /**
+                 $('#city').editable('destroy').editable({
+							type: 'select2',
+							source: new_source
+						}).editable('setValue', null);
+                 */
+
+                    //so we remove it altogether and create a new element
+                var city = $('#city').removeAttr('id').get(0);
+                $(city).clone().attr('id', 'city').text('Select City').editable({
+                    type: 'select2',
+                    value : null,
+                    source: new_source
+                }).insertAfter(city);//insert it after previous instance
+                $(city).remove();//remove previous instance
+
+            }
+        });
+
+        $('#city').editable({
+            type: 'select2',
+            value : 'Amsterdam',
+            source: cities[currentValue]
+        });
+
+
+
+        $('#signup').editable({
+            type: 'date',
+            format: 'yyyy-mm-dd',
+            viewformat: 'dd/mm/yyyy',
+            datepicker: {
+                weekStart: 1
+            }
+        });
+
+        $('#age').editable({
+            type: 'spinner',
+            name : 'age',
+            spinner : {
+                min : 16, max:99, step:1
+            }
+        });
+
+        //var $range = document.createElement("INPUT");
+        //$range.type = 'range';
+        $('#login').editable({
+            type: 'slider',//$range.type == 'range' ? 'range' : 'slider',
+            name : 'login',
+            slider : {
+                min : 1, max:50, width:100
+            },
+            success: function(response, newValue) {
+                if(parseInt(newValue) == 1)
+                    $(this).html(newValue + " hour ago");
+                else $(this).html(newValue + " hours ago");
+            }
+        });
+
+        $('#about').editable({
+            mode: 'inline',
+            type: 'wysiwyg',
+            name : 'about',
+            wysiwyg : {
+                //css : {'max-width':'300px'}
+            },
+            success: function(response, newValue) {
+            }
+        });
+
+
+
+        // *** editable avatar *** //
+        try 
+
+            var last_gritter
+            $('#avatar').editable({
+                type: 'image',
+                name: 'avatar',
+                value: null,
+                image: {
+                    //specify ace file input plugin's options here
+                    btn_choose: 'Change Avatar',
+                    droppable: true,
+                    /**
+                     //this will override the default before_change that only accepts image files
+                     before_change: function(files, dropped) {
+								return true;
+							},
+                     */
+
+                    //and a few extra ones here
+                    name: 'avatar',//put the field name here as well, will be used inside the custom plugin
+                    max_size: 110000,//~100Kb
+                    on_error : function(code) );
+                        } else if(code == 2) );
+                        }
+                        else 
+                    },
+                    on_success : function() {
+                        $.gritter.removeAll();
+                    }
+                },
+                url: function(params) {
+                    // ***UPDATE AVATAR HERE*** //
+                    //You can replace the contents of this function with examples/profile-avatar-update.js for actual upload
+
+
+                    var deferred = new $.Deferred
+
+                    //if value is empty, means no valid files were selected
+                    //but it may still be submitted by the plugin, because "" (empty string) is different from previous non-empty value whatever it was
+                    //so we return just here to prevent problems
+                    var value = $('#avatar').next().find('input[type=hidden]:eq(0)').val();
+                    if(!value || value.length == 0) {
+                        deferred.resolve();
+                        return deferred.promise();
+                    }
+
+
+                    //dummy upload
+                    setTimeout(function(){
+                        if("FileReader" in window) {
+                            //for browsers that have a thumbnail of selected image
+                            var thumb = $('#avatar').next().find('img').data('thumb');
+                            if(thumb) $('#avatar').get(0).src = thumb;
+                        }
+
+                        deferred.resolve({'status':'OK'});
+
+                        if(last_gritter) $.gritter.remove(last_gritter);
+                        last_gritter = $.gritter.add({
+                            title: 'Avatar Updated!',
+                            text: 'Uploading to server can be easily implemented. A working example is included with the template.',
+                            class_name: 'gritter-info gritter-center'
+                        });
+
+                    } , parseInt(Math.random() * 800 + 800))
+
+                    return deferred.promise();
+                },
+
+                success: function(response, newValue) {
+                }
+            })
+        }catch(e) {}
+
+
+
+        //another option is using modals
+        $('#avatar2').on('click', function(){
+            var modal =
+                '<div class="modal hide fade">\
+                    <div class="modal-header">\
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>\
+                        <h4 class="blue">Change Avatar</h4>\
+                    </div>\
+                    \
+                    <form class="no-margin">\
+                    <div class="modal-body">\
+                        <div class="space-4"></div>\
+                        <div style="width:75%;margin-left:12%;"><input type="file" name="file-input" /></div>\
+                    </div>\
+                    \
+                    <div class="modal-footer center">\
+                        <button type="submit" class="btn btn-small btn-success"><i class="icon-ok"></i> Submit</button>\
+                        <button type="button" class="btn btn-small" data-dismiss="modal"><i class="icon-remove"></i> Cancel</button>\
+                    </div>\
+                    </form>\
+                </div>';
+
+
+            var modal = $(modal);
+            modal.modal("show").on("hidden", function(){
+                modal.remove();
+            });
+
+            var working = false;
+
+            var form = modal.find('form:eq(0)');
+            var file = form.find('input[type=file]').eq(0);
+            file.ace_file_input({
+                style:'well',
+                btn_choose:'Click to choose new avatar',
+                btn_change:null,
+                no_icon:'icon-picture',
+                thumbnail:'small',
+                before_remove: function() {
+                    //don't remove/reset files while being uploaded
+                    return !working;
+                },
+                before_change: function(files, dropped) {
+                    var file = files[0];
+                    if(typeof file === "string") {
+                        //file is just a file name here (in browsers that don't support FileReader API)
+                        if(! (/\.(jpe?g|png|gif)$/i).test(file) ) return false;
+                    }
+                    else 
+                    }
+
+                    return true;
+                }
+            });
+
+            form.on('submit', function(){
+                if(!file.data('ace_input_files')) return false;
+
+                file.ace_file_input('disable');
+                form.find('button').attr('disabled', 'disabled');
+                form.find('.modal-body').append("<div class='center'><i class='icon-spinner icon-spin bigger-150 orange'></i></div>");
+
+                var deferred = new $.Deferred;
+                working = true;
+                deferred.done(function() {
+                    form.find('button').removeAttr('disabled');
+                    form.find('input[type=file]').ace_file_input('enable');
+                    form.find('.modal-body > :last-child').remove();
+
+                    modal.modal("hide");
+
+                    var thumb = file.next().find('img').data('thumb');
+                    if(thumb) $('#avatar2').get(0).src = thumb;
+
+                    working = false;
+                });
+
+
+                setTimeout(function(){
+                    deferred.resolve();
+                } , parseInt(Math.random() * 800 + 800));
+
+                return false;
+            });
+
+        });
+
+
+
+        //////////////////////////////
+        $('#profile-feed-1').slimScroll({
+            height: '250px',
+            alwaysVisible : true
+        });
+
+        $('.profile-social-links > a').tooltip();
+
+        $('.easy-pie-chart.percentage').each(function(){
+            var barColor = $(this).data('color') || '#555';
+            var trackColor = '#E2E2E2';
+            var size = parseInt($(this).data('size')) || 72;
+            $(this).easyPieChart({
+                barColor: barColor,
+                trackColor: trackColor,
+                scaleColor: false,
+                lineCap: 'butt',
+                lineWidth: parseInt(size/10),
+                animate:false,
+                size: size
+            }).css('color', barColor);
+        });
+
+        ///////////////////////////////////////////
+
+        //show the user info on right or left depending on its position
+        $('#user-profile-2 .memberdiv').on('mouseenter', function(){
+            var $this = $(this);
+            var $parent = $this.closest('.tab-pane');
+
+            var off1 = $parent.offset();
+            var w1 = $parent.width();
+
+            var off2 = $this.offset();
+            var w2 = $this.width();
+
+            var place = 'left';
+            if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) place = 'right';
+
+            $this.find('.popover').removeClass('right left').addClass(place);
+        }).on('click', function() {
+            return false;
+        });
+
+
+        ///////////////////////////////////////////
+        $('#user-profile-3')
+            .find('input[type=file]').ace_file_input({
+            style:'well',
+            btn_choose:'Change avatar',
+            btn_change:null,
+            no_icon:'icon-picture',
+            thumbnail:'large',
+            droppable:true,
+            before_change: function(files, dropped) {
+                var file = files[0];
+                if(typeof file === "string") 
+                else 
+                }
+
+                return true;
+            }
+        })
+            .end().find('button[type=reset]').on(ace.click_event, function(){
+            $('#user-profile-3 input[type=file]').ace_file_input('reset_input');
+        })
+            .end().find('.date-picker').datepicker().next().on(ace.click_event, function(){
+            $(this).prev().focus();
+        })
+        $('.input-mask-phone').mask('(999) 999-9999');
+
+
+
+        ////////////////////
+        //change profile
+        $('[data-toggle="buttons"] .btn').on('click', function(e){
+            var target = $(this).find('input[type=radio]');
+            var which = parseInt(target.val());
+            $('.user-profile').parent().addClass('hide');
+            $('#user-profile-'+which).parent().removeClass('hide');
+        });
+    });
+</script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
 </html>
